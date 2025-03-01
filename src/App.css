@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.match-tracker {
+  background: #0a0a0a;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 26px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  width: 100%;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: #1f1f1f;
+  color: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.filter-buttons button:hover {
+  background: #333;
+  color: #ffffff;
+}
+
+.filter-buttons button.active-filter {
+  background: #ffffff;
+  color: #000000;
+}
+
+.filter-buttons button.active-filter:hover {
+  background: #e0e0e0;
+}
+
+.matches {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1f1f1f;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  gap: 10px;
+}
+
+.team {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.team-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.score {
+  font-size: 26px;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  min-width: 80px;
+  text-align: center;
+}
+
+.scheduled {
+  background: #ffc107;
+  color: black;
+}
+
+.ongoing {
+  background: #00c853;
+  color: white;
+}
+
+.finished {
+  background: #d32f2f;
+  color: white;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .match-card {
+    padding: 15px;
+  }
+
+  .team {
+    font-size: 18px;
+  }
+
+  .score {
+    font-size: 22px;
+  }
+
+  .status {
+    font-size: 12px;
+  }
+
+  .filter-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 20px;
+  }
+
+  .team {
+    font-size: 16px;
+  }
+
+  .score {
+    font-size: 20px;
+  }
+
+  .status {
+    font-size: 10px;
+    padding: 6px 10px;
+  }
+
+  .match-card {
+    padding: 10px;
+  }
+
+  .team-logo {
+    width: 25px;
+    height: 25px;
+  }
+}
